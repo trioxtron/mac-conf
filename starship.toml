@@ -13,8 +13,7 @@ disabled = false
 format = "[  $path ](bg:#7678ED #181926)"
 
 [git_branch]
-symbol = ""
-format = "[ $symbol $branch ](bg:#F7B801 #181926)"
+format = "[  $branch ](bg:#F7B801 #181926)"
 
 [git_status]
 format = '([\[$all_status\]$ahead_behind ](bg:#F7B801 #fe640b))'
