@@ -13,6 +13,15 @@ defaults write com.apple.menuextra.battery ShowPercent -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 
-
 # Make dock reveal faster
 defaults write com.apple.dock autohide-delay -bool false
+
+# Set corner shortcuts
+defaults write com.apple.dock wvous-bl-corner -int 13 # Lock screen
+defaults write com.apple.dock wvous-br-corner -int 0 # No option
+defaults write com.apple.dock wvous-tl-corner -int 0 # No option
+defaults write com.apple.dock wvous-tr-corner -int 12 # Open notification center
+
+# Restart the dock
+killall Dock
+
