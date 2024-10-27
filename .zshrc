@@ -40,6 +40,8 @@ alias llt='eza -lah -g --icons --git --tree -L2 --git-ignore'
 alias t='tmux'
 alias cd='z'
 alias n='nvim'
+alias ans='source ~/dev/venv/ansible/bin/activate'
+alias bas='source ~/dev/venv/basicenv/bin/activate'
 
 export EDITOR=vim
 

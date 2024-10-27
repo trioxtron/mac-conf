@@ -27,3 +27,8 @@ brew:
 
 settings:
 	./settings.sh
+
+python:
+	./python.sh
+
+	
