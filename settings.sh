@@ -13,6 +13,9 @@ defaults write com.apple.menuextra.battery ShowPercent -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 
+# Change scrolling direction with mouse
+defaults write com.apple.swipescrolldirection -bool false
+
 # Make dock reveal faster
 defaults write com.apple.dock autohide-delay -bool false
 
