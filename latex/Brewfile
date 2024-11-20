@@ -1,0 +1,6 @@
+tap "zegervdv/zathura"
+brew "poppler"
+brew "zathura"
+brew "dbus"
+brew "zathura-pdf-poppler"
+cask "mactex"

@@ -29,6 +29,9 @@ settings:
 	./settings.sh
 
 python:
-	./python.sh
+	./python/python.sh
 
+latex:
+	brew bundle --file=latex/Brewfile
+	latex/setup.sh
 	
