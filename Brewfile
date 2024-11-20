@@ -1,8 +1,5 @@
 tap "hashicorp/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "homeport/tap"
 brew "python@3.12"
