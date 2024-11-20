@@ -44,5 +44,6 @@ alias ans='source ~/dev/venv/ansible/bin/activate'
 alias bas='source ~/dev/venv/basicenv/bin/activate'
 
 export EDITOR=vim
+export DBUS_SESSION_BUS_ADDRESS="unix:path=$DBUS_LAUNCHD_SESSION_BUS_SOCKET"
 
 [[ ! -v TMUX ]] && tmux
