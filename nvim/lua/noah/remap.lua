@@ -18,7 +18,14 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
 
 
-vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww <CR>")
+vim.keymap.set("n", "<C-f>", function ()
+    local p = vim.api.nvim_buf_get_name(0)
+    local path = p:gsub("%.tex", "")..".pdf"
+    vim.cmd('silent !tmux new-window -d "zathura '..path..'"')
+end)
+
+vim.keymap.set("n", "<C-a>", "<cmd>silent !tmux new-window <CR>")
+
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
