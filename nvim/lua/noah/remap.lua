@@ -20,8 +20,10 @@ vim.keymap.set("n", "<leader>Y", "\"+Y")
 
 vim.keymap.set("n", "<C-f>", function ()
     local p = vim.api.nvim_buf_get_name(0)
-    local path = p:gsub("%.tex", "")..".pdf"
-    vim.cmd('silent !tmux new-window -d "zathura '..path..'"')
+    local path, count = p:gsub("%.tex", "")
+    if count == 1 then
+        vim.cmd('silent !tmux new-window -d "zathura '..path..'.pdf"')
+    end
 end)
 
 vim.keymap.set("n", "<C-a>", "<cmd>silent !tmux new-window <CR>")
