@@ -22,7 +22,7 @@ vim.keymap.set("n", "<C-f>", function ()
     local p = vim.api.nvim_buf_get_name(0)
     local path, count = p:gsub("%.tex", "")
     if count == 1 then
-        vim.cmd('silent !tmux new-window -d "zathura '..path..'.pdf"')
+        vim.cmd('silent !tmux new-window -t 0 -d "zathura '..path..'.pdf"')
     end
 end)
 
