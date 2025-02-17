@@ -25,6 +25,9 @@ defaults write com.apple.dock wvous-br-corner -int 0 # No option
 defaults write com.apple.dock wvous-tl-corner -int 0 # No option
 defaults write com.apple.dock wvous-tr-corner -int 12 # Open notification center
 
+# Reduce item width in menu bar
+defaults -currentHost write -globalDomain NSStatusItemSpacing -int 8
+
 # Restart the dock
 killall Dock
 
