@@ -12,7 +12,7 @@ backup-configs:
 	cp ~/Library/Preferences/com.googlecode.iterm2.plist .
 	cp ~/Library/Preferences/com.knollsoft.Rectangle.plist .
 	cp ~/.zshrc .
-	cp -r ~/.config/nvim .
+	#cp -r ~/.config/nvim .
 	cp ~/.tmux.conf .
 	cp ~/Library/Preferences/com.ospfranco.sol.plist .
 
