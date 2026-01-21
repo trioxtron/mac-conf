@@ -26,6 +26,11 @@ vim.keymap.set("n", "<C-f>", function ()
     end
 end)
 
+vim.keymap.set("n", "<C-n>", function ()
+    local p = vim.api.nvim_buf_get_name(0)
+    vim.cmd('silent !tmux new-window -t 0 -d "open '..p..'"')
+end)
+
 vim.keymap.set("n", "<C-a>", "<cmd>silent !tmux new-window <CR>")
 
 
